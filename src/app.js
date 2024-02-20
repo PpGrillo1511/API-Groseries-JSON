@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 app.use(morgan('dev'));
-app.use('/api/products', productsRouter);
+app.use('/', productsRouter);
 
 
 export default app;
