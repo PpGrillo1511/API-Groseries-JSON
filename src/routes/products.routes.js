@@ -13,7 +13,7 @@ const router = Router();
 router.get('/', getAll);
 
 // Ruta para obtener un solo producto por código de barras
-router.get('/getOne/:barcode', getOne);
+router.get('/:barcode', getOne);
 
 // Ruta para insertar un producto
 router.post('/insertOne', insertOne);
