@@ -16,13 +16,13 @@ router.get('/', getAll);
 router.get('/:barcode', getOne);
 
 // Ruta para insertar un producto
-router.post('/insertOne', insertOne);
+router.post('/', insertOne);
 
 // Ruta para actualizar un producto
-router.put("/updateOne/:barcode", updateOne)
+router.put("/:barcode", updateOne)
 
 // Ruta para eliminar un producto
-router.delete("/deleteOne/:barcode", deleteOne);
+router.delete("/:barcode", deleteOne);
 
 
 export default router;
